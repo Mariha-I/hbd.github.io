@@ -46,6 +46,7 @@ galleryButton.addEventListener("click", () => {
 })
 
 p2button.addEventListener('click', () => {
+    document.getElementById('whim2').pause();
     window.scrollTo({
         top: extraSection.getBoundingClientRect().bottom,
         behavior: "smooth",

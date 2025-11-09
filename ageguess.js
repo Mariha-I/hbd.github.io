@@ -3,9 +3,10 @@ const userInputElement = document.getElementsByClassName("input")[0];
 const nextButton = document.getElementById('nextButton');
 const extraSection = document.getElementById('extraSection');
 const tunes = document.getElementsByClassName('tunesB')[0];
+const whim1 = document.getElementById('whim1');
 
 tunes.addEventListener('click', function() {
-        document.getElementById('whim1').play();
+        whim1.play();
         // Optional: Hide or disable the button after it's clicked
         tunes.style.display = 'none';
     });
@@ -39,6 +40,7 @@ userInputElement.addEventListener("keyup", function(event){
 });
 
 nextButton.addEventListener('click', () => {
+    whim1.pause(),
     window.scrollTo({
         top: extraSection.getBoundingClientRect().bottom,
         behavior: "smooth",
