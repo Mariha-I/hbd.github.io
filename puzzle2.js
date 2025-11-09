@@ -19,6 +19,12 @@ function isRiddleCorrect() {
         setTimeout(() => {
             overlay.style.display = "block";
             overlay.style.opacity = 1;
+            document.getElementById('whim2').play();
+            confetti({
+                particleCount: 150,
+                spread: 90,
+                origin: {y: 0.6},
+            })
         }, 2000);
     } else {
         message.textContent = "try again..."
