@@ -1,0 +1,228 @@
+.starting_screen{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input{  
+    text-align: center;
+}
+
+.message{
+    font-size: medium;
+}
+
+#nextButton {
+    display: none;
+    font-family: monospace;
+    font-size: medium;
+    background-color: rgb(7, 48, 1);
+    color: white;
+    border: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s
+    
+}
+
+#nextButton:active {
+    transform: scale(0.95); /* Slightly shrink the button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a pressed shadow */
+}
+
+#nextButton:hover {
+    color: #45a049;
+}
+
+#puzzle1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+}
+
+.prep {
+    padding-top: 20%;
+}
+
+#yes {
+    font-family: monospace;
+    font-size: medium;
+    background-color: rgb(7, 48, 1);
+    color: white;
+    border: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+#yes:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#yes:hover {
+    color: #45a049;
+}
+
+#gallery {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22,74,19);
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow-y: auto;
+}
+
+img {
+    width: 50%;
+    padding-top: 10%;
+    padding-left: 25%;
+}
+
+#puzz {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#galleryButton {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    font-family: monospace;
+    font-size: medium;
+    background-color: rgb(22,74,19);
+    color: white;
+    border: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#galleryButton:hover {
+    color: #45a049;
+}
+
+#galleryButton:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.heartfelt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+#p2button {
+    font-family: monospace;
+    font-size: medium;
+    background-color: rgb(22,74,19);
+    color: white;
+    border: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-bottom: 20%;
+}
+
+#p2button:hover {
+    color: #45a049;
+}
+
+#puzzle2{
+    background-color: rgb(30, 98, 26);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+}
+
+#sike {
+    padding-top: 5%;
+}
+
+.riddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+}
+
+#overlay {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22,74,19);
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+#overlay2 {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22,74,19);
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.text{
+    margin: 100px;
+}
+
+#extraSection {
+    height: 100vh;
+}
+
+body{
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    background-color: rgb(7, 48, 1);
+    color: white;
+    font-family: monospace;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth; /* enables smooth scrolling */
+    transition: height 2s ease;
+}
+
+@keyframes fadeIn{
+    From{
+        opacity: 0;
+    }
+    To{
+        opacity: 1;
+    }
+}
