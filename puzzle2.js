@@ -7,6 +7,7 @@ function isRiddleCorrect() {
     var userInput = userInputElement.value;
     const normalizedInput = userInput.trim().toLowerCase();
     if (answers.includes(normalizedInput)){
+        //customize this message
         message.textContent = "ok costume designer!! hope this year is full of so many awesome sewing and knitting projects"
         setTimeout(() => {
             overlay.style.display = "block";

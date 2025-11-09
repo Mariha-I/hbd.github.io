@@ -1,4 +1,5 @@
-var unscrambled = "performative males"
+var unscrambled = "placeholder" 
+//replace this with the word you want that corresponds to the scrambled word in puzzle1.html
 const yesButton = document.getElementById('yes');
 const p1 = document.getElementById('overlay');
 const prep = document.getElementById('prep');
@@ -17,7 +18,7 @@ function isCorrectAttempt (){
     var userInput = attempt.value;
     const message = document.getElementById('output');
     if (userInput === unscrambled){
-        message.textContent = "omg that event was so much fun"
+        message.textContent = "with age comes wisdom..."
         setTimeout(() => {
             galleryButton.style.display = 'inline-block';
             galleryButton.style.opacity = 1;
