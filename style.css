@@ -202,6 +202,32 @@ img {
     margin: 100px;
 }
 
+.tunesB {
+    display: block;
+    font-family: monospace;
+    font-size: medium;
+    background-color: rgb(8, 22, 7);
+    color: white;
+    border: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tunesC {
+    display: block;
+    font-family: monospace;
+    font-size: medium;
+    background-color: rgb(8, 22, 7);
+    color: white;
+    border: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+}
+
 #extraSection {
     height: 100vh;
 }

@@ -2,7 +2,13 @@ var age = 20; //change this value to what ever the target is
 const userInputElement = document.getElementsByClassName("input")[0];
 const nextButton = document.getElementById('nextButton');
 const extraSection = document.getElementById('extraSection');
+const tunes = document.getElementsByClassName('tunesB')[0];
 
+tunes.addEventListener('click', function() {
+        document.getElementById('whim1').play();
+        // Optional: Hide or disable the button after it's clicked
+        tunes.style.display = 'none';
+    });
 
 function isCorrectAge(){
     var userInput = parseInt(userInputElement.value);

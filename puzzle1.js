@@ -8,11 +8,18 @@ const galleryButton = document.getElementById('galleryButton');
 const gallery = document.getElementById('gallery');
 const p2button = document.getElementById('p2button');
 const extraSection = document.getElementById('extraSection');
+const tunes = document.getElementsByClassName('tunesB')[0];
 
 yesButton.addEventListener('click', () => {
     p1.style.display = 'block';
     p1.style.opacity = 1;
 })
+
+tunes.addEventListener('click', function() {
+        document.getElementById('whim2').play();
+        // Optional: Hide or disable the button after it's clicked
+        tunes.style.display = 'none';
+    });
 
 function isCorrectAttempt (){
     var userInput = attempt.value;

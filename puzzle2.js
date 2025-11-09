@@ -2,6 +2,13 @@ const userInputElement = document.getElementsByClassName("input")[0];
 const answers = ["needle", "a needle", "the needle"];
 const message = document.getElementById('output');
 const overlay = document.getElementById('overlay2');
+const tunes = document.getElementsByClassName('tunesC')[0];
+
+tunes.addEventListener('click', function() {
+        document.getElementById('whim2').play();
+        // Optional: Hide or disable the button after it's clicked
+        tunes.style.display = 'none';
+    });
 
 function isRiddleCorrect() {
     var userInput = userInputElement.value;
